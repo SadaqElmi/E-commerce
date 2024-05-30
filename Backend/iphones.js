@@ -1,14 +1,3 @@
-export function getProductIphone(productId) {
-  let matchProduct;
-  mobileIphones.forEach((product) => {
-    if (product.id === productId) {
-      matchProduct = product;
-    }
-  });
-
-  return matchProduct;
-}
-
 export let mobileIphones = [
   {
     id: "1",

@@ -59,6 +59,7 @@ export function orderSummaryMobiles() {
                       </li>
       
       `;
+    console.log(matchProductMobile);
   });
 
   document.querySelector(".order-summary").innerHTML = orderSummaryMobileHTML;
@@ -73,8 +74,7 @@ export function orderSummaryMobiles() {
         `.js-cart-item-container-${productId}`
       );
       container.remove();
-      renderCheckoutHeader();
-      renderMobileIphone();
+      orderSummaryMobiles();
     });
   });
 }

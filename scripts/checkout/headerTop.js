@@ -20,6 +20,7 @@ export function renderCheckoutHeader() {
     document.querySelector(
       ".js-checkoutItems"
     ).innerHTML = `CheckoutItems: ${cartTotal}`;
+    document.querySelector(".js-cart-quantity").innerHTML = cartTotal;
   }
   updateCarQuantity();
 }

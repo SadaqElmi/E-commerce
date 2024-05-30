@@ -1,6 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { mobileIphones } from "../Backend/iphones.js";
 import { cart } from "../data/cart.js";
+import { mobileIphones } from "../Backend/iphones.js";
 
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");
@@ -12,33 +12,32 @@ btnClose.addEventListener("click", () => {
 open.addEventListener("click", () => {
   sideMenu.style.display = "block";
 });
+let mobileHTML = "";
 
-export function renderMobileIphone() {
-  let mobileHTML = "";
-  mobileIphones.forEach((productIphone) => {
-    mobileHTML += `
+mobileIphones.forEach((productIphones) => {
+  mobileHTML += `
        <div class="group relative">
             <div
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"
             >
               <img
-              class="h-full w-full  lg:h-full lg:w-full"
-              src="${productIphone.image}"
+              class="h-full w-full object-contain lg:h-full lg:w-full"
+              src="${productIphones.image}"
               />
             </div>
             <div class="mt-4 flex justify-between">
               <div class="gap-2 flex flex-col">
-                <h3 class="text-sm text-gray-700">${productIphone.name}</h3>
+                <h3 class="text-sm text-gray-700">${productIphones.name}</h3>
                 <p class="mt-1 text-sm text-gray-500">Black</p>
               </div>
               <div class="right-info-product flex flex-col gap-2 items-center">
                 <p class="text-sm font-medium text-gray-900">$${formatMoneyCurrency(
-                  productIphone.priceCents
+                  productIphones.priceCents
                 )}</p>
                  <span
                   class="text-white pl-4 pr-4 py-2 rounded-sm bg-sky-400 pointer text-sm add-to-js "
                  
-                   data-product-id="${productIphone.id}"
+                   data-product-id="${productIphones.id}"
                 >
                   Add To Cart
                 </span>
@@ -46,23 +45,22 @@ export function renderMobileIphone() {
             </div>
           </div>
   `;
-  });
-  // document.querySelector(".product-Iphones").innerHTML = mobileHTML;
+});
+document.querySelector(".product-Iphones").innerHTML = mobileHTML;
 
-  function updateQuantity() {
-    let cartQuantity = cart.calculateCartQuantity();
-    document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
-  }
-  updateQuantity();
+function updateQuantity() {
+  let cartQuantity = cart.calculateCartQuantity();
 
-  // btn add
-  document.querySelectorAll(".add-to-js").forEach((link) => {
-    link.addEventListener("click", () => {
-      const { productId } = link.dataset;
-      console.log(productId);
-      cart.addToCart(productId);
-      updateQuantity();
-    });
-  });
+  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 }
-renderMobileIphone();
+updateQuantity();
+
+// add btn
+document.querySelectorAll(".add-to-js").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const productId = btn.dataset.productId;
+    console.log(productId);
+    cart.addToCart(productId);
+    updateQuantity();
+  });
+});
