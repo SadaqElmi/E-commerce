@@ -1,13 +1,13 @@
-export function pageProduct(productId) {
+export function getProduct(productId) {
   let matchProduct;
-  pageProducts.forEach((product) => {
+  products.forEach((product) => {
     if (product.id === productId) {
       matchProduct = product;
     }
   });
   return matchProduct;
 }
-export const pageProducts = [
+export const products = [
   {
     id: "1",
     image: "images/mobile/1 (1).jpg",

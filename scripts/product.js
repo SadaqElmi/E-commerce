@@ -1,4 +1,4 @@
-import { pageProducts } from "../Backend/pageProduct.js";
+import { products } from "../Backend/pageProduct.js";
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
 import { cart } from "../data/cart.js";
 
@@ -16,7 +16,7 @@ open.addEventListener("click", () => {
 
 let summerHTML = "";
 
-pageProducts.forEach((product) => {
+products.forEach((product) => {
   summerHTML += `
        <div class="group relative">
             <div
@@ -69,4 +69,4 @@ document.querySelectorAll(".add-to-js").forEach((btn) => {
   });
 });
 
-console.log(pageProducts);
+console.log(products);

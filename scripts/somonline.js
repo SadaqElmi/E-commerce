@@ -1,6 +1,6 @@
 import { productSomOnlne } from "../Backend/productsSom.js";
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { calculateCartQuantity } from "../data/cart.js";
+import { cart } from "../data/cart.js";
 
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");
@@ -47,7 +47,7 @@ function orderSummary() {
   document.querySelector(".product").innerHTML = summerHTML;
 
   function updateCartQuantity() {
-    let cartQuantity = calculateCartQuantity();
+    let cartQuantity = cart.calculateCartQuantity();
     document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
   }
   updateCartQuantity();
