@@ -32,13 +32,13 @@ class Cart {
     let matchingItem;
 
     this.cartItems.forEach((cartItem) => {
-      if (productId === cartItem.productId) {
+      if (productId === cartItem.id) {
         matchingItem = cartItem;
       }
     });
 
     if (matchingItem) {
-      matchingItem.quantity += quantity;
+      matchingItem.quantity += 1;
     } else {
       this.cartItems.push({
         id: productId,
@@ -53,7 +53,7 @@ class Cart {
     const newCart = [];
 
     this.cartItems.forEach((cartItem) => {
-      if (cartItem.productId !== productId) {
+      if (cartItem.id !== productId) {
         newCart.push(cartItem);
       }
     });
@@ -74,4 +74,4 @@ class Cart {
   }
 }
 
-export const cart = new Cart("cart");
+export const cart = new Cart("Ecommerce");

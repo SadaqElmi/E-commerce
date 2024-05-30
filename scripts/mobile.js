@@ -1,5 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
 import { mobile } from "../Backend/mobile.js";
+import { cart } from "../data/cart.js";
 
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");
@@ -33,17 +34,33 @@ mobile.forEach((productMobile) => {
                 <p class="text-sm font-medium text-gray-900">$${formatMoneyCurrency(
                   productMobile.priceCents
                 )}</p>
-                 <button
+                 <span
                   class="text-white pl-4 pr-4 py-2 rounded-sm bg-sky-400 pointer text-sm add-to-js "
                  
                    data-product-id="${productMobile.id}"
                 >
                   Add To Cart
-                </button>
+                </span>
               </div>
             </div>
           </div>
   `;
 });
-
 document.querySelector(".product-mobiles").innerHTML = mobileHTML;
+
+function updateQuantity() {
+  let cartQuantity = cart.calculateCartQuantity();
+
+  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+}
+updateQuantity();
+
+// add btn
+document.querySelectorAll(".add-to-js").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const productId = btn.dataset.productId;
+    console.log(productId);
+    cart.addToCart(productId);
+    updateQuantity();
+  });
+});
