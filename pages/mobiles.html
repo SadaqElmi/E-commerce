@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SomOnline | Mobile</title>
+    <!-- tialwind link  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- ! header  -->
+    <header class="inset-x-0 top-0">
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="../product.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Sadaq</span>
+            <img
+              class="h-8 w-16 h-[50px] object-cover"
+              src="../images/Logos/SOA2-01.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-js"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="../somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="../product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
+          <a href="#" class="relative open-cart-side">
+            <img
+              src="../images/icons/shopping-cart (1).png"
+              class="h-12 w-12"
+              alt=""
+            />
+            <div class="absolute top-1 left-[18px] cart-quantity-js">0</div>
+          </a>
+          <a
+            href="../singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <img
+                class="w-16 h-[50px] object-cover"
+                src="../images/Logos/SOA2-01.png"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
+            >
+              <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Features</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Marketplace</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Company</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="../singup.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ? Background  -->
+    <div class="bg-gray-100">
+      <!-- ! hero section  -->
+      <div
+        class="h-[250px] bg-cover bg-no-repeat bg-center flex items-center justify-center relative mb-20"
+        style="background-image: url(/images/bg/one.jpg)"
+      >
+        <div class="flex flex-col items-center">
+          <h1 class="font-bold text-white text-[50px]">Iphones</h1>
+          <p class="text-white font-sm text-2xl">
+            You Can Get Any iPhones you Want
+          </p>
+        </div>
+
+        <!-- ! Top categories -->
+        <div
+          class="bg-[#ffffff] h-[200px] w-[90%] absolute top-[200px] rounded-lg shadow-2xl"
+        >
+          <div class="kuli flex flex-col">
+            <h1 class="font-semibold text-[20px] pb-1 pl-5">Top categories</h1>
+            <div class="snap-x flex items-center h-full justify-around pt-4">
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="iphones.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full"
+                    src="../images/companies/apple-logo.png"
+                  />
+                  <h1>Iphones</h1>
+                </a>
+              </div>
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="samsung.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full"
+                    src="../images/companies/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg"
+                  />
+                </a>
+
+                <h1>Samsung</h1>
+              </div>
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="redmi.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full object-cover"
+                    src="../images/companies/xiaomi.jpeg"
+                  />
+                </a>
+                <h1>xiaomi</h1>
+              </div>
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="oppo.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full"
+                    src="../images/companies/Oppo Logo.jpeg"
+                  />
+                </a>
+                <h1>OPPO</h1>
+              </div>
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="huawei.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full"
+                    src="../images/companies/huawei.jpeg"
+                  />
+                </a>
+                <h1>Huawei</h1>
+              </div>
+              <div
+                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
+              >
+                <a href="vivo.html">
+                  <img
+                    class="w-[65px] h-[65px] rounded-full"
+                    src="../images/companies/vivo.jpeg"
+                  />
+                </a>
+                <h1>Vivo</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! Some pRODUCTS  -->
+    <div class="grid-products">
+      <div
+        class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      >
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+          Some Top Products
+        </h2>
+        <div
+          href="product.html"
+          class="mt-6 grid grid-cols-1 cursor-pointer gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 product-mobiles"
+        ></div>
+      </div>
+    </div>
+    <script src="/scripts/mobile.js" type="module"></script>
+  </body>
+</html>

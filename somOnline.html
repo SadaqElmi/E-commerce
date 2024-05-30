@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SomOnline</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/Logos/SOA2-01.png"
+      type="image/x-icon"
+    />
+    <!-- ? link css  -->
+    <link rel="stylesheet" href="styles/alibabaHomePage/somonline.css" />
+    <!-- ? Link Icons  -->
+    <script
+      src="https://kit.fontawesome.com/588001c7ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tialwind link  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- ? top Header  -->
+    <div
+      class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
+    >
+      <div
+        class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#12A5F1] to-[#ffff] opacity-30"
+          style="
+            clip-path: polygon(
+              74.8% 41.9%,
+              97.2% 73.2%,
+              100% 34.9%,
+              92.5% 0.4%,
+              87.5% 0%,
+              75% 28.6%,
+              58.5% 54.6%,
+              50.1% 56.8%,
+              46.9% 44%,
+              48.3% 17.4%,
+              24.7% 53.9%,
+              0% 27.9%,
+              11.9% 74.2%,
+              24.9% 54.1%,
+              68.6% 100%,
+              74.8% 41.9%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ffff] to-[##12A5F1] opacity-30"
+          style="
+            clip-path: polygon(
+              74.8% 41.9%,
+              97.2% 73.2%,
+              100% 34.9%,
+              92.5% 0.4%,
+              87.5% 0%,
+              75% 28.6%,
+              58.5% 54.6%,
+              50.1% 56.8%,
+              46.9% 44%,
+              48.3% 17.4%,
+              24.7% 53.9%,
+              0% 27.9%,
+              11.9% 74.2%,
+              24.9% 54.1%,
+              68.6% 100%,
+              74.8% 41.9%
+            );
+          "
+        ></div>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <p class="text-sm leading-6 text-gray-900">
+          <strong class="font-semibold">New Products </strong
+          ><svg
+            viewBox="0 0 2 2"
+            class="mx-2 inline h-0.5 w-0.5 fill-current"
+            aria-hidden="true"
+          >
+            <circle cx="1" cy="1" r="1" /></svg
+          >Join us in Denver from June 7 – 9 to see what’s coming next.
+        </p>
+        <a
+          href="product.html"
+          class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >Buy now <span aria-hidden="true">&rarr;</span></a
+        >
+      </div>
+      <div class="flex flex-1 justify-end"></div>
+    </div>
+    <!-- ! hero section  -->
+    <div class="bg-white">
+      <header class="">
+        <nav class="p-6 flex items-center justify-between">
+          <div class="flex">
+            <a href="/somOnline.html" class="-m-1.5 p-1.5">
+              <img
+                class="h-8 w-16 h-[50px] object-cover"
+                src="./images/Logos/SOA2-01.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a
+              href="somOnline.html"
+              class="text-sm font-semibold leading-6 text-sky-400"
+              >Home</a
+            >
+            <a
+              href="product.html"
+              class="text-sm font-semibold leading-6 text-sky-400"
+              >Product</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+              >Services</a
+            >
+            <a
+              href="aboutUs.html"
+              class="text-sm font-semibold leading-6 text-sky-400"
+              >About</a
+            >
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a
+              class="cart-link header-link relative flex items-center"
+              href="checkout.html"
+            >
+              <img class="h-12 w-12" src="images/icons/shopping-cart (1).png" />
+              <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+              <div class="cart-text text-sky-400">Cart</div>
+            </a>
+
+            <a
+              href="singup.html"
+              class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+              >Log in <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-js"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+
+          <div
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <img
+                  class="w-16 h-[50px] object-cover"
+                  src="images/Logos/SOA2-01.png"
+                  alt=""
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
+              >
+                <img
+                  src="images/icons/close.png"
+                  class="h-[15px] w-[15px] alt="
+                />
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    href="somOnline.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Home</a
+                  >
+                  <a
+                    href="product.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Product</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Service</a
+                  >
+                  <a
+                    href="aboutUs.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >About</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="singup.html"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- !Hero section  -->
+      <div class="relative isolate lg:px-8">
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        ></div>
+        <div class="mx-auto max-w-2xl sm:py-48">
+          <!--! text-center -->
+          <div class="text-center">
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Welcome to our online business
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              any kind of business activity that happens over the internet
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="product.html"
+                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Get Product</a
+              >
+              <a
+                href="aboutUs.html"
+                class="text-sm font-semibold leading-6 text-gray-900"
+                >Learn more <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        ></div>
+      </div>
+    </div>
+
+    <!-- * contect compaties  -->
+
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">
+          Trusted by the world’s most innovative teams
+        </h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+        >
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="images/companies/Shopify-Logo.png"
+            alt="Transistor"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="images/companies/apple-logo.png"
+            alt="Reform"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="images/companies/Printify.png"
+            alt="Tuple"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            src="images/companies/netfilex.png"
+            alt="SavvyCal"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 col-start-2 max-h-16 w-16 h-[70px] object-contain sm:col-start-auto lg:col-span-1"
+            src="images/companies/Microsoft.png"
+            alt="Statamic"
+            width="158"
+            height="48"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- * catagories    -->
+
+    <div class="bg-white mt-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2
+          class="text-center text-[25px] font-semibold leading-8 text-gray-900"
+        >
+          Browers By cetagories
+        </h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+        >
+          <a
+            href="/pages/mobiles.html"
+            class="flex flex-col items-center gap-2"
+          >
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/cell-phone.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>Mobiles</h1>
+          </a>
+          <a href="/pages/tablet.html" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/tablet.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>Tablet</h1>
+          </a>
+          <a
+            href="/pages/t-shirt.html"
+            class="flex flex-col items-center gap-2 justify-center"
+          >
+            <i class="fa-solid fa-shirt text-4xl text-sky-500"></i>
+            <h1>T-shirts</h1>
+          </a>
+          <a href="#" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/hp.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>Laptops</h1>
+          </a>
+          <a href="#" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/airpods.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>AirPods</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--! Some pRODUCTS  -->
+    <div class="grid-products">
+      <div
+        class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      >
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+          Some Top Products
+        </h2>
+        <a
+          href="product.html"
+          class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 product"
+        ></a>
+      </div>
+    </div>
+    <!-- ? blog section  ?-->
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            From the Our Customer Service
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Learn how to grow your business with our expert advice.
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >Mar 16, 2020</time
+              >
+              <span
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Marketing</span
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <span class="pointer">
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </span>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                exercitationem placeat consectetur nulla deserunt vel. Iusto
+                corrupti dicta.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="images/myteam/one (1).jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50 object-cover"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Michael Foster
+                  </a>
+                </p>
+                <p class="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >oct 21, 2021</time
+              >
+              <span
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Saler</span
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <span>
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </span>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                exercitationem placeat consectetur nulla deserunt vel. Iusto
+                corrupti dicta.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="images/myteam/one (2).jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50 object-cover"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    sj
+                  </a>
+                </p>
+                <p class="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >jun 13, 2023</time
+              >
+              <span
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Business</span
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <span>
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </span>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                exercitationem placeat consectetur nulla deserunt vel. Iusto
+                corrupti dicta.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="images/myteam/one (3).jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50 object-cover"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Ahmed
+                  </a>
+                </p>
+                <p class="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- More posts... -->
+        </div>
+      </div>
+    </div>
+    <!-- *status  -->
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <dl
+          class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4"
+        >
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600">
+              Transactions every 24 hours
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+            >
+              8,000+
+            </dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600">
+              Assets under holding
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+            >
+              3%
+            </dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600">
+              Paid out to creators
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+            >
+              $70M
+            </dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600">
+              New users annually
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+            >
+              46,000
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <!-- ? memember team ship  -->
+
+    <div class="bg-white py-24 sm:py-32">
+      <div
+        class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3"
+      >
+        <div class="max-w-2xl">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Meet our leadership
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
+            elementum enim vitae ullamcorper suspendisse.
+          </p>
+        </div>
+        <ul
+          role="list"
+          class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        >
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full object-cover"
+                src="images/myteam/one (1).jpg "
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Mahdi Jacar
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  Designer UI/UX
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- image  two  -->
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full object-cover"
+                src="images/myteam/one (2).jpg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Moha Jacar
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  BackEnd Developer
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- image three  -->
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full object-cover"
+                src="images/myteam/one (3).jpg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Xasuusi
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  FrontEnd Developer
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- image four  -->
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full object-cover"
+                src="images/myteam/one (4).jpg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  ChesMaster
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  Creative
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- More people... -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- ? about me  -->
+
+    <section
+      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+    >
+      <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.sky.400),white)] opacity-100"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+      ></div>
+      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <img class="mx-auto h-16" src="images/Logos/SOA2-01.png " alt="" />
+
+        <figure class="mt-10">
+          <blockquote
+            class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+          >
+            <p>
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+              in laborum sed rerum et corporis.”
+            </p>
+          </blockquote>
+          <figcaption class="mt-10">
+            <img
+              class="mx-auto h-10 w-10 rounded-full object-cover"
+              src="images/ani/a.jpg "
+              alt=""
+            />
+            <div
+              class="mt-4 flex items-center justify-center space-x-3 text-base"
+            >
+              <div class="font-semibold text-gray-900">Sadaq Elmi</div>
+              <svg
+                viewBox="0 0 2 2"
+                width="3"
+                height="3"
+                aria-hidden="true"
+                class="fill-gray-900"
+              >
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <div class="text-gray-600">Front End Developer</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="h-full flex bg-sky-400 justify-center pb-10 pt-10">
+      <div class="">
+        <div class="flex flex-col items-center">
+          <h1 class="pb-2 text-1xl">Sadaq Elmi</h1>
+          <h2 class="pb-2 text-1xl">Sadaqelmi123@gmail.com</h2>
+          <div class="icons">
+            <ul class="flex gap-4">
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook text-3xl"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-instagram text-3xl"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-github text-3xl"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- somonline js -->
+    <script src="/scripts/somonline.js" type="module"></script>
+  </body>
+</html>

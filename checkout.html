@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>som Online | Checkout</title>
+    <link
+      rel="shortcut icon"
+      href="images/Logos/SOA2-01.png"
+      type="image/x-icon"
+    />
+    <!-- tialwind link  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="">
+      <nav class="p-6 flex items-center justify-between">
+        <div class="flex">
+          <a href="/somOnline.html" class="-m-1.5 p-1.5">
+            <img
+              class="h-8 w-16 h-[50px] object-cover"
+              src="./images/Logos/SOA2-01.png"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a
+            href="aboutUs.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a
+            class="cart-link header-link relative flex items-center"
+            href="checkout.html"
+          >
+            <img class="h-12 w-12" src="images/icons/shopping-cart (1).png" />
+            <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+            <div class="cart-text text-sky-400">Cart</div>
+          </a>
+
+          <a
+            href="singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-js"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <img
+                class="w-16 h-[50px] object-cover"
+                src="images/Logos/SOA2-01.png"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
+            >
+              <img
+                src="images/icons/close.png"
+                class="h-[15px] w-[15px] alt="
+              />
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="somOnline.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="product.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Service</a
+                >
+                <a
+                  href="aboutUs.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="singup.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- carts  -->
+    <div class="checkout-head">
+      <div class="checkout">
+        <div
+          class="flex text-base font-medium text-gray-900 justify-center js-checkoutItems"
+        ></div>
+        <div class="flex max-w-full">
+          <div
+            class="flex justify-around gap-10 items-center bg-white shadow-xl w-full max-sm:flex-col"
+          >
+            <div class="flex flex-col px-4 py-6 sm:px-6">
+              <!-- Header text  -->
+              <div class="flex items-start justify-between">
+                <h2
+                  class="text-lg font-medium text-gray-900"
+                  id="slide-over-title"
+                >
+                  Shopping cart
+                </h2>
+                <div class="ml-3 flex h-7 items-center"></div>
+              </div>
+              <!-- ORDER SUMMER  -->
+              <div class="mt-8">
+                <div class="flow-root">
+                  <ul
+                    role="list"
+                    class="-my-6 divide-y divide-gray-200 order-summary"
+                  ></ul>
+                </div>
+              </div>
+            </div>
+            <!-- PAYMENTS SUMMERY  -->
+            <div
+              class="border-t border-gray-200 px-4 py-6 sm:px-6 payment-summary"
+            >
+              <h1 class="text-base font-medium text-gray-900">
+                SubTotalItems:(5)
+              </h1>
+              <div
+                class="flex justify-between text-base font-medium text-gray-900"
+              >
+                <p>Subtotal</p>
+                <p>$262.00</p>
+              </div>
+              <p class="mt-0.5 text-sm text-gray-500">
+                Shipping and taxes calculated at checkout.
+              </p>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  >Checkout</a
+                >
+              </div>
+              <div
+                class="mt-6 flex justify-center text-center text-sm text-gray-500"
+              >
+                <p>
+                  or
+                  <a
+                    href="product.html"
+                    type="button"
+                    class="font-medium text-indigo-600 hover:text-indigo-500"
+                  >
+                    Continue Shopping
+                    <span aria-hidden="true"> &rarr;</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/checkout/checkout.js" type="module"></script>
+  </body>
+</html>

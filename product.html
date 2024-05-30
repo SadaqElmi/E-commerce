@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SomOnline | Products</title>
+    <!-- ? Link Icons  -->
+    <script
+      src="https://kit.fontawesome.com/588001c7ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tialwind link  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="fixed left-0 right-0 top-0 z-10 bg-white">
+      <nav class="p-6 flex items-center justify-between">
+        <div class="flex">
+          <a href="/somOnline.html" class="-m-1.5 p-1.5">
+            <img
+              class="h-8 w-16 h-[50px] object-cover"
+              src="./images/Logos/SOA2-01.png"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a
+            href="aboutUs.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a
+            class="cart-link header-link relative flex items-center"
+            href="checkout.html"
+          >
+            <img class="h-12 w-12" src="images/icons/shopping-cart (1).png" />
+            <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+            <div class="cart-text text-sky-400">Cart</div>
+          </a>
+
+          <a
+            href="singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-js"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <img
+                class="w-16 h-[50px] object-cover"
+                src="images/Logos/SOA2-01.png"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
+            >
+              <img
+                src="./images/icons/close.png"
+                class="h-[15px] w-[15px] alt="
+              />
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="somOnline.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="product.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Service</a
+                >
+                <a
+                  href="aboutUs.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="singup.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ?hero section  -->
+    <div class="relative overflow-hidden bg-white mt-[150px]">
+      <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <div class="sm:max-w-lg">
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              New Products finally here
+            </h1>
+            <p class="mt-4 text-xl text-gray-500">
+              This year, our new summer collection will shelter you from the
+              harsh elements of a world that doesn't care if you live or die.
+            </p>
+          </div>
+          <div>
+            <div class="mt-10">
+              <!-- image grid -->
+              <div
+                aria-hidden="true"
+                class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+              >
+                <div
+                  class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
+                >
+                  <div class="flex items-center space-x-6 lg:space-x-8">
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div
+                        class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
+                      >
+                        <img
+                          src="images/productHero/IMG-20221223-WA0170.jpg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/download (3).jpeg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/download (4).jpeg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/IMG-20221223-WA0161.jpg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/last.jpeg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/ZARA.jpeg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="images/productHero/IMG-20221220-WA0156.jpg"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="inline-block rounded-md border border-transparent bg-sky-400 px-8 py-3 text-center font-medium text-white"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * catagories    -->
+
+    <div class="bg-white mt-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2
+          class="text-center text-[25px] font-semibold leading-8 text-gray-900"
+        >
+          Browers By cetagories
+        </h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+        >
+          <a
+            href="./pages/mobiles.html"
+            class="flex flex-col items-center gap-2"
+          >
+            <i
+              class="fa-solid fa-mobile text-4xl text-sky-500"
+              style="color: #74c0fc"
+            ></i>
+            <h1>Mobiles</h1>
+          </a>
+          <a href="pages/tablet.html" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/tablet.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>Tablet</h1>
+          </a>
+          <li class="flex flex-col items-center gap-2 justify-center">
+            <a href="pages/t-shirt.html">
+              <i class="fa-solid fa-shirt text-4xl text-sky-500"></i>
+              <h1>T-shirts</h1>
+            </a>
+          </li>
+          <a href="/pages/laptop.html" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/hp.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>Laptops</h1>
+          </a>
+          <a href="pages/airPods.html" class="flex flex-col items-center gap-2">
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="images/icons/airpods.png"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <h1>AirPods</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--! Some pRODUCTS  -->
+    <div class="grid-products cursor-pointer">
+      <div
+        class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      >
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+          Some Top Products
+        </h2>
+        <div
+          class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 product"
+        ></div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/product.js"></script>
+  </body>
+</html>
