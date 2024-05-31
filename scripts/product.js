@@ -64,6 +64,7 @@ document.querySelectorAll(".add-to-js").forEach((btn) => {
   btn.addEventListener("click", () => {
     const productId = btn.dataset.productId;
     console.log(productId);
+    alert(`Added product Success! `);
     cart.addToCart(productId);
     updateQuantity();
   });

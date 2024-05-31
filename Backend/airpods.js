@@ -4,6 +4,7 @@ export let airpodsProducts = [
     image: "../images/airpots/1 (1).jpg",
     name: "Iphone 15",
     color: "green",
+    category: "phones",
     priceCents: "129900",
   },
   {
@@ -32,6 +33,7 @@ export let airpodsProducts = [
     image: "../images/airpots/1 (5).jpg",
     name: "Iphone 15",
     color: "green",
+    category: "phones",
     priceCents: "129900",
   },
   {
@@ -67,6 +69,7 @@ export let airpodsProducts = [
     image: "../images/headPhones/1 (10).jpg",
     name: "Iphone 15",
     color: "green",
+    category: "phones",
     priceCents: "129900",
   },
   {

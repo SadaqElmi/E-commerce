@@ -1,4 +1,6 @@
 import { products } from "../../Backend/pageProduct.js";
+import { mobile } from "../../Backend/mobile.js";
+import { mobileIphones } from "../../Backend/iphones.js";
 
 import { cart } from "../../data/cart.js";
 
