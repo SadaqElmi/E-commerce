@@ -1,5 +1,4 @@
 import { products } from "../../Backend/pageProduct.js";
-import { mobile } from "../../Backend/mobile.js";
 import { mobileIphones } from "../../Backend/iphones.js";
 
 import { cart } from "../../data/cart.js";
@@ -29,7 +28,7 @@ export function orderSummaryPageProduct() {
                           <img
                             src="${matchPageProduct.image}"
                             alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt."
-                            class="h-full w-full object-cover object-center"
+                            class="h-full w-full object-contain"
                           />
                         </div>
   

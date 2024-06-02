@@ -59,7 +59,6 @@ export function orderSummaryMobiles() {
                       </li>
       
       `;
-    console.log(matchProductMobile);
   });
 
   document.querySelector(".order-summary").innerHTML = orderSummaryMobileHTML;
