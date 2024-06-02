@@ -13,11 +13,11 @@ class Cart {
     if (!this.cartItems) {
       this.cartItems = [
         {
-          id: "1",
+          id: "2461iph1",
           quantity: 2,
         },
         {
-          id: "2",
+          id: "2461iph2",
           quantity: 1,
         },
       ];
