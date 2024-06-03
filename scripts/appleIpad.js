@@ -1,5 +1,8 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { appleIpadProducts } from "../Backend/appleIpad.js";
+import { appleIpadProducts } from "../Backend/ProductData.js";
+
+import { cart } from "../data/cart.js";
+
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");
 const open = document.querySelector(".btn-open-js");
@@ -46,3 +49,20 @@ appleIpadProducts.forEach((productAppleIpad) => {
 });
 
 document.querySelector(".product-mobiles").innerHTML = mobileHTML;
+
+function updateQuantity() {
+  let cartQuantity = cart.calculateCartQuantity();
+
+  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+}
+updateQuantity();
+
+// add btn
+document.querySelectorAll(".add-to-js").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const productId = btn.dataset.productId;
+    console.log(productId);
+    cart.addToCart(productId);
+    updateQuantity();
+  });
+});

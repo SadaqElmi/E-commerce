@@ -10,14 +10,10 @@
   </head>
   <body>
     <!-- ! header  -->
-    <header class="inset-x-0 top-0">
-      <nav
-        class="flex items-center justify-between p-6 lg:px-8"
-        aria-label="Global"
-      >
-        <div class="flex lg:flex-1">
-          <a href="../product.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Sadaq</span>
+    <header class="fixed left-0 right-0 top-0 z-10 bg-white">
+      <nav class="p-6 flex items-center justify-between">
+        <div class="flex">
+          <a href="../somOnline.html" class="-m-1.5 p-1.5">
             <img
               class="h-8 w-16 h-[50px] object-cover"
               src="../images/Logos/SOA2-01.png"
@@ -25,6 +21,48 @@
             />
           </a>
         </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="../somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="../product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a
+            href="../aboutUs.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a
+            class="cart-link header-link relative flex items-center"
+            href="../checkout.html"
+          >
+            <img
+              class="h-12 w-12"
+              src="../images/icons/shopping-cart (1).png"
+            />
+            <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+            <div class="cart-text text-sky-400">Cart</div>
+          </a>
+
+          <a
+            href="../singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+
         <div class="flex lg:hidden">
           <button
             type="button"
@@ -46,46 +84,13 @@
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a
-            href="../somOnline.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Home</a
-          >
-          <a
-            href="../product.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Product</a
-          >
-          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
-            >Services</a
-          >
-          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
-            >About</a
-          >
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <a href="#" class="relative open-cart-side">
-            <img
-              src="../images/icons/shopping-cart (1).png"
-              class="h-12 w-12"
-              alt=""
-            />
-            <div class="absolute top-1 left-[18px] cart-quantity-js">0</div>
-          </a>
-          <a
-            href="../singup.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Log in <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
 
         <div
-          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
         >
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
@@ -99,7 +104,10 @@
               type="button"
               class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
             >
-              <i class="fa-solid fa-xmark text-3xl"></i>
+              <img
+                src="../images/icons/close.png"
+                class="h-[15px] w-[15px] alt="
+              />
             </button>
           </div>
           <div class="mt-6 flow-root">
@@ -118,10 +126,10 @@
                 <a
                   href="#"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Services</a
+                  >Service</a
                 >
                 <a
-                  href="#"
+                  href="../aboutUs.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >About</a
                 >
@@ -139,7 +147,7 @@
       </div>
     </header>
     <!-- ? Background  -->
-    <div class="bg-gray-100">
+    <div class="bg-gray-100 pt-20">
       <!-- ! hero section  -->
       <div
         class="h-[250px] bg-cover bg-no-repeat bg-center flex items-center justify-center relative mb-20"
@@ -154,77 +162,77 @@
 
         <!-- ! Top categories -->
         <div
-          class="bg-[#ffffff] h-[200px] w-[90%] absolute top-[200px] rounded-lg shadow-2xl"
+          class="bg-[#ffffff] h-[200px] w-[90%] absolute top-[200px] rounded-lg shadow-2xl lg-w-full"
         >
           <div class="kuli flex flex-col">
             <h1 class="font-semibold text-[20px] pb-1 pl-5">Top categories</h1>
-            <div class="snap-x flex items-center h-full justify-around pt-4">
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="iphones.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full"
-                    src="../images/companies/apple-logo.png"
-                  />
-                  <h1>Iphones</h1>
-                </a>
-              </div>
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="samsung.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full"
-                    src="../images/companies/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg"
-                  />
-                </a>
-
-                <h1>Samsung</h1>
-              </div>
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="redmi.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full object-cover"
-                    src="../images/companies/xiaomi.jpeg"
-                  />
-                </a>
-                <h1>xiaomi</h1>
-              </div>
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="oppo.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full"
-                    src="../images/companies/Oppo Logo.jpeg"
-                  />
-                </a>
-                <h1>OPPO</h1>
-              </div>
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="huawei.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full"
-                    src="../images/companies/huawei.jpeg"
-                  />
-                </a>
-                <h1>Huawei</h1>
-              </div>
-              <div
-                class="snap-normal gap-2 snap-center ... flex flex-col items-center font-medium"
-              >
-                <a href="vivo.html">
-                  <img
-                    class="w-[65px] h-[65px] rounded-full"
-                    src="../images/companies/vivo.jpeg"
-                  />
-                </a>
-                <h1>Vivo</h1>
+            <div class="bg-white">
+              <div class="mx-auto max-w-7xl">
+                <div
+                  class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-6"
+                >
+                  <a
+                    href="iphones.html"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px] rounded-full"
+                      rounded-full
+                      src="../images/companies/apple-logo.png "
+                      alt="Transistor"
+                    />
+                    <h2>Iphone</h2>
+                  </a>
+                  <a
+                    href="samsung.html"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px] rounded-full"
+                      src="../images/companies/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg "
+                      alt="Transistor"
+                    />
+                    <h2>Samsung</h2>
+                  </a>
+                  <a href="redmi.html" class="flex flex-col items-center gap-2">
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px] rounded-full"
+                      rounded-full
+                      src="../images/companies/xiaomi.jpeg "
+                      alt="Transistor"
+                    />
+                    <h2>Xiaomi</h2>
+                  </a>
+                  <a href="oppo.html" class="flex flex-col items-center gap-2">
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px] rounded-full"
+                      rounded-full
+                      src="../images/companies/Oppo Logo.jpeg "
+                      alt="Transistor"
+                    />
+                    <h2>Oppo</h2>
+                  </a>
+                  <a href="vivo.html" class="flex flex-col items-center gap-2">
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px] rounded-full"
+                      src="../images/companies/vivo.jpeg "
+                      alt="Transistor"
+                    />
+                    <h2>Vivo</h2>
+                  </a>
+                  <a
+                    href="huawei.html"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <img
+                      class="col-span-2 lg:col-span-1 w-[65px] h-[65px]"
+                      rounded-full
+                      src="../images/companies/huawei.jpeg "
+                      alt="Transistor"
+                    />
+                    <h2>Huawei</h2>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

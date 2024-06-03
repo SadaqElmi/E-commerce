@@ -1,5 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { redmiProducts } from "../Backend/redmi.js";
+import { redmiProducts } from "../Backend/ProductData.js";
+
 import { cart } from "../data/cart.js";
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");

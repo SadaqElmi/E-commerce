@@ -1,4 +1,5 @@
-import { productSomOnlne } from "../Backend/productsSom.js";
+import { productSomOnlne } from "../Backend/ProductData.js";
+
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
 import { cart } from "../data/cart.js";
 

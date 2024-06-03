@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SomOnline | Mobile</title>
+    <title>SomOnline | T-shirt</title>
+    <link
+      rel="shortcut icon"
+      href="../images/Logos/SOA2-01.png"
+      type="image/x-icon"
+    />
     <!-- tialwind link  -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- ! header  -->
-    <header class="inset-x-0 top-0">
-      <nav
-        class="flex items-center justify-between p-6 lg:px-8"
-        aria-label="Global"
-      >
-        <div class="flex lg:flex-1">
-          <a href="../product.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Sadaq</span>
+    <header class="fixed left-0 right-0 top-0 z-10 bg-white">
+      <nav class="p-6 flex items-center justify-between">
+        <div class="flex">
+          <a href="../somOnline.html" class="-m-1.5 p-1.5">
             <img
               class="h-8 w-16 h-[50px] object-cover"
               src="../images/Logos/SOA2-01.png"
@@ -24,6 +25,48 @@
             />
           </a>
         </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="../somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="../product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a
+            href="../aboutUs.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a
+            class="cart-link header-link relative flex items-center"
+            href="../checkout.html"
+          >
+            <img
+              class="h-12 w-12"
+              src="../images/icons/shopping-cart (1).png"
+            />
+            <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+            <div class="cart-text text-sky-400">Cart</div>
+          </a>
+
+          <a
+            href="../singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+
         <div class="flex lg:hidden">
           <button
             type="button"
@@ -45,46 +88,13 @@
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a
-            href="../somOnline.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Home</a
-          >
-          <a
-            href="../product.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Product</a
-          >
-          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
-            >Services</a
-          >
-          <a href="#" class="text-sm font-semibold leading-6 text-sky-400"
-            >About</a
-          >
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <a href="#" class="relative open-cart-side">
-            <img
-              src="../images/icons/shopping-cart (1).png"
-              class="h-12 w-12"
-              alt=""
-            />
-            <div class="absolute top-1 left-[18px] cart-quantity-js">0</div>
-          </a>
-          <a
-            href="../singup.html"
-            class="text-sm font-semibold leading-6 text-sky-400"
-            >Log in <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
 
         <div
-          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
         >
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
@@ -98,31 +108,34 @@
               type="button"
               class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
             >
-              <i class="fa-solid fa-xmark text-3xl"></i>
+              <img
+                src="../images/icons/close.png"
+                class="h-[15px] w-[15px] alt="
+              />
             </button>
           </div>
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="../somOnline.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="../product.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >Product</a
                 >
                 <a
                   href="#"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Features</a
+                  >Service</a
                 >
                 <a
-                  href="#"
+                  href="../aboutUs.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a
+                  >About</a
                 >
               </div>
               <div class="py-6">
@@ -137,6 +150,7 @@
         </div>
       </div>
     </header>
+
     <!-- ? Background  -->
     <div class="bg-gray-100">
       <!-- ! hero section  -->
@@ -166,7 +180,7 @@
                     class="w-[35px] h-[35px]"
                     src="../images/icons/t-shirt.png"
                   />
-                  <h1>Shirt</h1>
+                  <h1>Fanaanad</h1>
                 </a>
               </div>
 
@@ -180,7 +194,7 @@
                   />
                 </a>
 
-                <h1>T-Shirt</h1>
+                <h1>Shaati</h1>
               </div>
             </div>
           </div>

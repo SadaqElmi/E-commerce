@@ -1,5 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { tabletProducts } from "../Backend/tablet.js";
+import { cart } from "../data/cart.js";
+import { tabletProducts } from "../Backend/ProductData.js";
 
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");
@@ -47,3 +48,20 @@ tabletProducts.forEach((productTbalet) => {
 });
 
 document.querySelector(".product-mobiles").innerHTML = mobileHTML;
+
+function updateQuantity() {
+  let cartQuantity = cart.calculateCartQuantity();
+
+  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+}
+updateQuantity();
+
+// add btn
+document.querySelectorAll(".add-to-js").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const productId = btn.dataset.productId;
+    console.log(productId);
+    cart.addToCart(productId);
+    updateQuantity();
+  });
+});

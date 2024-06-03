@@ -1,5 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
-import { mobile } from "../Backend/mobile.js";
+import { mobile } from "../Backend/ProductData.js";
+
 import { cart } from "../data/cart.js";
 
 const btnClose = document.querySelector(".btn-close-js");

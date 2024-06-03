@@ -70,7 +70,16 @@ class Cart {
     });
 
     return cartQuantity;
-    saveToStorage();
+  }
+  updateQuantity(productId, newQuantity) {
+    let matchId;
+    this.cartItems.forEach((cartItem) => {
+      if (productId === cartItem.id) {
+        matchId = cartItem;
+      }
+    });
+    matchId.quantity = newQuantity;
+    this.saveToStorage();
   }
 }
 

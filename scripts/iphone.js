@@ -1,6 +1,6 @@
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
 import { cart } from "../data/cart.js";
-import { mobileIphones } from "../Backend/iphones.js";
+import { mobileIphones } from "../Backend/ProductData.js";
 
 const btnClose = document.querySelector(".btn-close-js");
 const sideMenu = document.querySelector(".side-menu");

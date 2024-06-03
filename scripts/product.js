@@ -1,4 +1,5 @@
-import { products } from "../Backend/pageProduct.js";
+import { products } from "../Backend/ProductData.js";
+
 import { formatMoneyCurrency } from "./moneyCurrecy/money.js";
 import { cart } from "../data/cart.js";
 
@@ -64,7 +65,7 @@ document.querySelectorAll(".add-to-js").forEach((btn) => {
   btn.addEventListener("click", () => {
     const productId = btn.dataset.productId;
     console.log(productId);
-    alert(`Added product Success! `);
+
     cart.addToCart(productId);
     updateQuantity();
   });

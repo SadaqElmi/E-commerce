@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>somOnline || Services</title>
+    <link
+      rel="shortcut icon"
+      href="images/Logos/SOA2-01.png"
+      type="image/x-icon"
+    />
+    <!-- ? link css  -->
+    <link rel="stylesheet" href="styles/alibabaHomePage/somonline.css" />
+    <!-- ? Link Icons  -->
+    <script
+      src="https://kit.fontawesome.com/588001c7ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tialwind link  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- ?header  -->
+    <header class="">
+      <nav class="p-6 flex items-center justify-between">
+        <div class="flex">
+          <a href="/somOnline.html" class="-m-1.5 p-1.5">
+            <img
+              class="h-8 w-16 h-[50px] object-cover"
+              src="./images/Logos/SOA2-01.png"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="somOnline.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Home</a
+          >
+          <a
+            href="product.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Product</a
+          >
+          <a
+            href="Services.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >Services</a
+          >
+          <a
+            href="aboutUs.html"
+            class="text-sm font-semibold leading-6 text-sky-400"
+            >About</a
+          >
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a
+            class="cart-link header-link relative flex items-center"
+            href="checkout.html"
+          >
+            <img class="h-12 w-12" src="images/icons/shopping-cart (1).png" />
+            <div class="absolute top-1 left-[18px] js-cart-quantity">0</div>
+            <div class="cart-text text-sky-400">Cart</div>
+          </a>
+
+          <a
+            href="singup.html"
+            class="text-sm font-semibold leading-6 text-sky-400 hidden lg:flex"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-js"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 side-menu hidden"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <img
+                class="w-16 h-[50px] object-cover"
+                src="images/Logos/SOA2-01.png"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 btn-close-js"
+            >
+              <img
+                src="images/icons/close.png"
+                class="h-[15px] w-[15px] alt="
+              />
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="somOnline.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="product.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Service</a
+                >
+                <a
+                  href="aboutUs.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="singup.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="relative"
+      style="
+        background-image: url(images/office.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="mx-auto max-w-2xl sm:py-48">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            Our Services
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            alias quia cumque atque! Quam, saepe eius?
+          </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >Get started</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-white"
+              >Learn more <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">
+            Our Locations
+          </h2>
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Everything you need to Buy your Place
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium commodi ratione aliquid iste qui ab id, tempore ipsa
+            saepe hic. Vero quam quisquam consequuntur, nostrum voluptatem cum
+            voluptate et aliquid aliquam quibusdam itaque amet ea fugiat tenetur
+            nam, dolorum sunt recusandae alias perferendis quas accusamus
+            doloremque eaque excepturi in? Praesentium.
+          </p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-3xl"
+                    style="color: #74c0fc"
+                  ></i>
+                </div>
+                Albarako
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                porro minus rem cupiditate, a quaerat quia mollitia aut libero
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-3xl"
+                    style="color: #74c0fc"
+                  ></i>
+                </div>
+                Hodan
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                sit dicta temporibus iure neque maiores. Provident aut
+                voluptatibus voluptatem.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-3xl"
+                    style="color: #74c0fc"
+                  ></i>
+                </div>
+                Kaxda
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                velit ex, explicabo sequi ab consectetur?
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-3xl"
+                    style="color: #74c0fc"
+                  ></i>
+                </div>
+                Taleex
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                numquam molestias et commodi veniam assumenda iusto magni
+                explicabo cupiditate consequatur!
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
